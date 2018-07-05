@@ -1,0 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class changeColor : MonoBehaviour
+{
+void Start ()
+  {
+  
+  }
+	
+	void Update ()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            gameObject.GetComponent<Renderer>().material.color = Color.red;
+        }
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            gameObject.GetComponent<Renderer>().material.color = Color.blue;
+        }
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            gameObject.GetComponent<Renderer>().material.color = Color.green;
+        }
+    }
+}
